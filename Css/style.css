@@ -35,8 +35,26 @@
         font-weight: bold;
     }
     
-    li::before {
-        content: "\2022 ";
-        color: red;
-        /* or whatever color you prefer */
+    ul {
+        list-style: none;
+    }
+    
+    ul li::before {
+        content: "\2B24 ";
+        color: #FEC10B;
+        margin-left: -2em;
+    }
+    
+    .black-bg {
+        background-color: #1A160E;
+    }
+    
+    .inside-hire-me {
+        margin-left: 24px;
+        margin-top: 24px;
+    }
+    
+    .btn-warning {
+        font-weight: bold;
+        font-size: 30px;
     }
