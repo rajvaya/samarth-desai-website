@@ -60,9 +60,13 @@
         margin-top: -6%;
     }
     
-    #centered_nav {
+    #centered_nav,
+    .nav-menu,
+    .rc_nav {
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
+        overflow: hidden;
     }
     
     .rc_nav {
