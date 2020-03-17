@@ -16,7 +16,7 @@
 
     <div class="my-nav">
         <div class="row nav-design">
-            <div class="col-md-2">
+            <div class="col-md-2 corner-design">
                 <img src="../Assets/half-design.png" alt="" style="width:100%; opacity: 0.5;">
 
             </div>
@@ -25,36 +25,49 @@
             </div>
             <div class="col-md-4" style="margin-top: 2%;">
                 <center>
-                    <img src="../Assets/Logo Head.svg" alt="" style="width:60%">
+                    <img src="../Assets/Logo Head.svg" alt="" style="width:60%;z-index: 6;" id="nav-logo">
                 </center>
 
             </div>
             <div class="col-md-2">
 
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 corner-design">
                 <img src="../Assets/half-design-right.png" alt="" style="width:100%; opacity: 0.5;">
 
             </div>
         </div>
 
 
-        <div class="row nav-menu" style="margin-top: -10%;">
+        <div class="row my-navi" style="margin-top: -10%;">
             <div class="col-md-2">
 
             </div>
             <div class="col-md-8 ">
+                <nav>
+                    <div class="hamburger">
+                        <div class="line">
+
+                        </div>
+                        <div class="line">
+
+                        </div>
+                        <div class="line">
+
+                        </div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">My Work</a></li>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Hire Me</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </nav>
 
 
-                <div class="rc_nav " id="centered_nav">
-                    <a href="#home" title="About Me">About Me</a>
-                    <a href="#services" title="My Work">My work</a>
-                    <a href="#about" title="Academy">Academy</a>
-                    <a href="#contact" title="Gallery">Gallery</a>
-                    <a href="#contact" title="Hire Me">Hire Me</a>
-                    <a href="#contact" title="Contact">Contact Me</a>
-                    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
+
 
 
 
@@ -112,7 +125,7 @@
         </div>
         <div class="news-cards">
             <center>
-                <img src="../Assets/TitleHead.svg" alt="Academy" style="margin-top:80px">
+                <img src="../Assets/TitleHead.svg" class="title-head" alt="Academy" style="margin-top:80px; width: 100%;">
             </center>
             <div class="row news-start">
                 <div class="col-sm-4">
@@ -153,7 +166,7 @@
 
         </div>
         <div class="my-work">
-            <img src="../Assets/my_work.svg" alt="My Work">
+            <img src="../Assets/my_work.svg" class="title-head" alt="My Work">
             <div class="row my-work-start">
                 <div class="col-sm-1">
 
@@ -210,7 +223,7 @@
 
         </div>
         <div class="academy">
-            <center><img src="../Assets/titlehead.svg" alt=""></center>
+            <center><img src="../Assets/titlehead.svg" class="title-head" alt=""></center>
             <h2 class="Learn">Want to Learn from Me?</h2>
             <div class="row" style="margin-top: 24px;">
                 <div class="col-sm-7">
@@ -264,7 +277,7 @@
 
 
         <div class="hire-me" style="margin-top:80px ;">
-            <img src="../Assets/titlehead-1.svg" alt="" style="width: 100%;">
+            <img src="../Assets/titlehead-1.svg" class="title-head" alt="Hire Me" style="width: 100%;">
             <div class="black-bg" style="margin-top: 32px;">
 
                 <div class="row">
@@ -276,7 +289,7 @@
                             </p>
                             <div class="row" style="margin-top: 5%;">
                                 <div class="col-sm-4">
-                                    <button type="button" class="btn btn-warning" style="width: 90%;">Hire Me</button>
+                                    <button type="button" class="btn btn-warning">Hire Me</button>
 
                                 </div>
 
@@ -304,7 +317,7 @@
         </div>
 
         <div class="gallary" style="margin-top: 80px;">
-            <img src="../Assets/titlehead-2.svg" alt="" style="width: 100%;">
+            <img src="../Assets/titlehead-2.svg" class="title-head" alt="Gallery" style="width: 100%;">
             <div class="gal-images">
                 <div class="row" style="margin-top: 32px;;">
                     <div class="column">
@@ -338,7 +351,7 @@
         </div>
 
         <div class="contact">
-            <img src="../Assets/titlehead-3.svg" alt="" style="width: 100%; margin-top: 80px;">
+            <img src="../Assets/titlehead-3.svg" alt="" class="title-head" style="width: 100%; margin-top: 80px;">
             <div class="details-form">
 
 
@@ -368,7 +381,7 @@
     </div>
     <footer style="background-color: black;">
         <div class="footer" style="background-color: black;">
-            <div class="row">
+            <div class="row mob-foot">
                 <div class="col-md-2">
                     <img src="../Assets/footer_design.png" alt="" style="width: 100%;opacity: 0.25;">
 
@@ -471,6 +484,17 @@
 
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+
+        });
+    </script>
 
 
 
