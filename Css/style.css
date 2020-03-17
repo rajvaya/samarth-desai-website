@@ -44,6 +44,12 @@
             background: black;
             margin: 5px;
         }
+        .card {
+            margin-top: 5%;
+        }
+        .right-acad {
+            margin-top: 10%;
+        }
         .footer img {
             display: none;
         }
