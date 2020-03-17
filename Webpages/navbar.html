@@ -11,75 +11,81 @@
 
     <title>Hello, world!</title>
     <style>
-        #centered_nav {
-            position: sticky;
-            top: 0;
+        nav {
+            height: 10vh;
         }
         
-        .rc_nav {
-            background-color: #ffffff;
-            text-align: center;
-            z-index: 6;
+        .nav-links {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+            align-items: center;
+            color: black;
         }
         
-        .rc_nav a {
-            display: inline-block;
-            margin-right: -4px;
-            /* inline-block gap fix */
-            color: rgb(0, 0, 0);
-            padding: 22px 22px;
+        .nav-links li a {
+            color: black;
             text-decoration: none;
-            font-size: 18px;
-            -webkit-transition: background 0.3s linear;
-            -moz-transition: background 0.3s linear;
-            -ms-transition: background 0.3s linear;
-            -o-transition: background 0.3s linear;
-            transition: background 0.3s linear;
-            z-index: 9;
+            font-size: 16px;
         }
         
-        .rc_nav a:hover {
-            background-color: #ffffff;
-            color: #bdfe0e2;
-        }
-        
-        .rc_nav .icon {
-            display: none;
-        }
-        
-        .rc_content {
-            text-align: center;
-            padding-left: 14px;
-            font-family: Poppins;
-            margin-top: 100px;
-            color: #000000;
-        }
-        
-        @media screen and (max-width: 820px) {
-            .rc_nav a {
+        @media screen and (max-width: 768px) {
+            .line {
+                width: 30px;
+                height: 3px;
+                background: black;
+                margin: 5px;
+            }
+            .corner-design {
                 display: none;
             }
-            .rc_nav a.icon {
-                float: right;
-                display: block;
-                width: 60px;
-            }
-        }
-        
-        @media screen and (max-width: 820px) {
-            .rc_nav.responsive {
+            nav {
                 position: relative;
-                top: 73px;
             }
-            .rc_nav.responsive .icon {
+            .hamburger {
+                position: absolute;
+                cursor: pointer;
+                right: 5%;
+                top: 50%;
+                transform: translate(-5%, -50%);
+                z-index: 2;
+            }
+            .nav-links {
                 position: fixed;
-                right: 0;
-                top: 0;
+                background: #FEC10B;
+                color: black;
+                height: 100vh;
+                width: 100%;
+                flex-direction: column;
+                clip-path: circle(100px at 90% -30%);
+                -webkit-clip-path: circle(100px at 90% -30%);
+                transition: all 1s ease-out;
+                pointer-events: none;
             }
-            .rc_nav.responsive a {
-                float: none;
-                display: block;
-                text-align: center;
+            .nav-links.open {
+                clip-path: circle(1000px at 90% -10%);
+                -webkit-clip-path: circle(1000px at 90% -10%);
+                pointer-events: all;
+            }
+            .nav-links li {
+                opacity: 100;
+            }
+            .nav-links li a {
+                font-size: 25px;
+            }
+            .nav-links li:nth-child(1) {
+                transition: all 0.5s ease 0.2s;
+            }
+            .nav-links li:nth-child(2) {
+                transition: all 0.5s ease 0.4s;
+            }
+            .nav-links li:nth-child(3) {
+                transition: all 0.5s ease 0.6s;
+            }
+            li.fade {
+                opacity: 100;
             }
         }
     </style>
@@ -88,7 +94,7 @@
 <body>
     <div class="my-nav">
         <div class="row nav-design">
-            <div class="col-md-2">
+            <div class="col-md-2 corner-design">
                 <img src="../Assets/half-design.png" alt="" style="width:100%; opacity: 0.5;">
 
             </div>
@@ -97,36 +103,49 @@
             </div>
             <div class="col-md-4" style="margin-top: 2%;">
                 <center>
-                    <img src="../Assets/Logo Head.svg" alt="" style="width:60%">
+                    <img src="../Assets/Logo Head.svg" alt="" style="width:60%;z-index: 6;" id="nav-logo">
                 </center>
 
             </div>
             <div class="col-md-2">
 
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 corner-design">
                 <img src="../Assets/half-design-right.png" alt="" style="width:100%; opacity: 0.5;">
 
             </div>
         </div>
 
 
-        <div class="row " style="margin-top: -10%;">
+        <div class="row my-navi" style="margin-top: -10%;">
             <div class="col-md-2">
 
             </div>
             <div class="col-md-8 ">
+                <nav>
+                    <div class="hamburger">
+                        <div class="line">
+
+                        </div>
+                        <div class="line">
+
+                        </div>
+                        <div class="line">
+
+                        </div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">My Work</a></li>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Hire Me</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </nav>
 
 
-                <div class="rc_nav " id="centered_nav">
-                    <a href="#home" title="About Me">About Me</a>
-                    <a href="#services" title="My Work">My work</a>
-                    <a href="#about" title="Academy">Academy</a>
-                    <a href="#contact" title="Gallery">Gallery</a>
-                    <a href="#contact" title="Hire Me">Hire Me</a>
-                    <a href="#contact" title="Contact">Contact Me</a>
-                    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
+
 
 
 
@@ -144,83 +163,27 @@
 
 
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam accusamus cupiditate iusto, voluptas ipsa minus ullam eum dolorem, at ea nostrum similique sit quo eveniet eius, dignissimos maxime voluptatem aut!</p>
-
-
     <script>
-        function myFunction() {
-            var x = document.getElementById("centered_nav");
-            if (x.className === "rc_nav") {
-                x.className += " responsive";
-            } else {
-                x.className = "rc_nav";
-            }
-        }
-    </script>
-    <!-- <script>
-        $(document).ready(function() {
-            $("div").scroll(function() {
-                $("span").text(x += 1);
-            });
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+
         });
-    </script> -->
+    </script>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
