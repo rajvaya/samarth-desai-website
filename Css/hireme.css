@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+
+.body {
+    background-color: #FFFDFA;
+}
+
+.container {
+    max-width: 93.75% !important;
+}
+
+.qoute {
+    font-size: 24px;
+    font-family: Cinzel;
+    
+}
+
+.card-border {
+    border: 1px solid #FEC10B;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.hireme-category {
+    font-family: Cinzel;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 8px;
+text-transform: capitalize;
+}
+
+
+.underline {
+    border-bottom: 10px solid rgba(254, 193, 11, 0.3);
+    display: inline-block;
+
+  }
+
+p {
+    font-weight: 300;
+font-size: 24px;
+line-height: 160%;
+height: 160px;
+}
+
+.btn {
+    background-color: black;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+h6 {
+    padding-top: 8px;
+    font-size: 16px;
+    color: #4D4D4D;
+}
