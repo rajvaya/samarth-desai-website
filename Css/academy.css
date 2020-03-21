@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
 .academy ul li::before {
     color: #FEC10B;
     /* color of bullet or square */
@@ -16,6 +17,14 @@
     margin-top: 11%;
 }
 
+.card-title {
+    font-family: Cinzel;
+}
+
+h4 {
+    font-family: Cinzel;
+}
+
 footer img {
     width: 36px;
 }
@@ -30,6 +39,7 @@ footer img {
 
 footer {
     height: 230px;
+    font-family: Cinzel;
 }
 
 nav {
@@ -44,6 +54,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     color: black;
+    font-family: Cinzel;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .nav-links li a {
