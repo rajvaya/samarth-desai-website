@@ -1,40 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 .body {
-    background-color: #FFFDFA;
+    /* background-color: #FFFDFA; */
 }
 
 
+/* card carousel css*/
+
+
+/* card carousel css*/
 
 .qoute {
     font-size: 24px;
     font-family: Cinzel;
 }
 
+.card {
+    border: 1px solid #FEC10B !important;
+}
+
 .card-border {
-    border: 1px solid #FEC10B;
+    border: 1px solid #FEC10B !important;
     /* box-sizing: border-box; */
     border-radius: 4px;
 }
 
 .hireme-category {
     font-family: Cinzel;
-<<<<<<< HEAD
-    font-style: normal;
+    <<<<<<< HEAD font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 8px;
     text-transform: capitalize;
-=======
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-text-transform: capitalize;
->>>>>>> 44d127ae863d2cec79964f9f73bd0dca2548345a
+    =======font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-transform: capitalize;
+    >>>>>>>44d127ae863d2cec79964f9f73bd0dca2548345a
 }
 
 .underline {
-<<<<<<< HEAD
-    border-bottom: 10px solid rgba(254, 193, 11, 0.3);
+    <<<<<<< HEAD border-bottom: 10px solid rgba(254, 193, 11, 0.3);
     display: inline-block;
 }
 
@@ -44,43 +49,37 @@ p {
     line-height: 160%;
     height: 160px;
 }
-=======
-    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
-    display: inline-block
-  }
 
-
->>>>>>> 44d127ae863d2cec79964f9f73bd0dca2548345a
-
-.btn {
+=======border-bottom: 4px solid rgba(254,
+193,
+11,
+0.3);
+display: inline-block
+}
+>>>>>>>44d127ae863d2cec79964f9f73bd0dca2548345a .btn {
     background-color: black;
     border: none;
     padding: 8px 20px;
     border-radius: 4px;
 }
-
 h6 {
     padding-top: 8px;
     font-size: 16px;
     color: #4D4D4D;
-<<<<<<< HEAD
-=======
+    <<<<<<< HEAD=======
 }
-
-
 .aboutcontent {
     font-weight: lighter;
 }
-
 #boldit {
     font-weight: bold;
 }
-
 .row-border {
     padding: 32px;
-    border: 1px solid #FEC10B;;
+    border: 1px solid #FEC10B;
+    ;
     margin-left: 16px;
     margin-right: 16px;
     border-radius: 4px;
->>>>>>> 44d127ae863d2cec79964f9f73bd0dca2548345a
+    >>>>>>>44d127ae863d2cec79964f9f73bd0dca2548345a
 }
