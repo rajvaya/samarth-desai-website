@@ -1,46 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 .body {
-    /* background-color: #FFFDFA; */
+    background-color: #FFFDFA;
 }
 
+/* carousel */
 
-/* card carousel css*/
+.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
 
+.vert .carousel-item-next, .vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
 
-/* card carousel css*/
+.vert .carousel-item-prev, .vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    right: 10px;
+    left: auto;
+    width: auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.carousel-indicators li {
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.carousel-indicators li.active {
+    margin-bottom: 5px;
+    background: rgb(254, 193, 11, .8);
+    border: 1px solid #FEC10B;
+}
+
+.bg-cover {
+    width: 100%;
+    height: 472px;
+    background-size: cover;
+    border-radius: 4PX;
+}
+
+/*  */
 
 .qoute {
     font-size: 24px;
     font-family: Cinzel;
+    text-align: center;
+    margin: 60px;
 }
 
 .card {
     border: 1px solid #FEC10B !important;
 }
 
-.card-border {
-    border: 1px solid #FEC10B !important;
-    /* box-sizing: border-box; */
-    border-radius: 4px;
-}
-
 .hireme-category {
     font-family: Cinzel;
-    <<<<<<< HEAD font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 8px;
-    text-transform: capitalize;
-    =======font-style: normal;
+    font-style: normal;
     font-weight: normal;
     font-size: 36px;
     text-transform: capitalize;
-    >>>>>>>44d127ae863d2cec79964f9f73bd0dca2548345a
-}
-
-.underline {
-    <<<<<<< HEAD border-bottom: 10px solid rgba(254, 193, 11, 0.3);
-    display: inline-block;
 }
 
 p {
@@ -50,30 +85,34 @@ p {
     height: 160px;
 }
 
-=======border-bottom: 4px solid rgba(254,
-193,
-11,
-0.3);
-display: inline-block
+.hireme-category {
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
 }
->>>>>>>44d127ae863d2cec79964f9f73bd0dca2548345a .btn {
+
+.btn {
     background-color: black;
     border: none;
     padding: 8px 20px;
     border-radius: 4px;
 }
+
 h6 {
     padding-top: 8px;
     font-size: 16px;
     color: #4D4D4D;
-    <<<<<<< HEAD=======
 }
+
 .aboutcontent {
     font-weight: lighter;
+    font-size: 22px;
+    line-height: 34px;
 }
+
 #boldit {
     font-weight: bold;
 }
+
 .row-border {
     padding: 32px;
     border: 1px solid #FEC10B;
@@ -81,5 +120,43 @@ h6 {
     margin-left: 16px;
     margin-right: 16px;
     border-radius: 4px;
-    >>>>>>>44d127ae863d2cec79964f9f73bd0dca2548345a
+}
+
+@media screen and (max-width: 1024px) {
+    .reverseit {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .verticalit {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hireme-category {
+        font-size: 24px;
+    }
+    .aboutcontent {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .hireimg {
+        width: 100%;
+    }
+    .row-border {
+        padding: 16px;
+        border: 1px solid #FEC10B;
+        ;
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 4px;
+    }
+    .qoute {
+        font-size: 20px;
+        margin: 32px;
+    }
+    .carousel-indicators {
+ margin-right: -40px;
+    }
 }
