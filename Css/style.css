@@ -1,4 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+/* carousel */
+
+.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next, .vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev, .vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    right: 10px;
+    left: auto;
+    width: auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.carousel-indicators li {
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.carousel-indicators li.active {
+    margin-bottom: 5px;
+    background: rgb(254, 193, 11, .8);
+    border: 1px solid #FEC10B;
+}
+
+.bg-cover {
+    width: 100%;
+    height: 472px;
+    background-size: cover;
+    border-radius: 4PX;
+}
+
 .news-start {
     margin-top: 32px;
 }
@@ -203,7 +257,6 @@ footer {
     padding: 0 4px;
 }
 
-
 /* Create four equal columns that sits next to each other */
 
 .column {
@@ -220,7 +273,6 @@ footer {
     width: 100%;
 }
 
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
@@ -230,7 +282,6 @@ footer {
         max-width: 50%;
     }
 }
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
