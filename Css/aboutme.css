@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
-
-
 .body {
     background-color: #FFFDFA;
 }
 
-
 .aboutcontent {
     font-weight: lighter;
+    font-size: 20px;
 }
 
 #boldit {
@@ -38,7 +36,7 @@
 }
 
 .connectme {
-background: black;
+    background: black;
 }
 
 .card-design {
@@ -65,5 +63,125 @@ background: black;
     font-size: 28px;
     font-weight: bold;
     color: white;
-    
+}
+
+@media screen and (max-width: 768px) {
+    .abt-me-img {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .best-img {
+        margin-bottom: 40px;
+    }
+    .card-design {
+        display: none;
+    }
+    footer img {
+        display: none;
+    }
+    footer .col-md-2 {
+        margin-bottom: 8px;
+    }
+}
+
+
+/* nav n footer css starts*/
+
+footer img {
+    width: 36px;
+}
+
+.social-icons {
+    margin-top: -6%;
+}
+
+footer {
+    height: 230px;
+}
+
+nav {
+    height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    z-index: 3;
+    font-family: Cinzel;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    font-family: Cinzel;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 5px;
+    }
+    .corner-design {
+        display: none;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 4;
+    }
+    .nav-links {
+        position: fixed;
+        background: #FEC10B;
+        color: black;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -30%);
+        -webkit-clip-path: circle(100px at 90% -30%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li {
+        opacity: 100;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 100;
+    }
 }
