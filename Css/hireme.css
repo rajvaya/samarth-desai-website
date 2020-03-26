@@ -228,6 +228,19 @@ h6 {
     .titlehead {
         display: none;
     }
+    footer img {
+        display: none;
+    }
+    footer .col-md-2 {
+        margin-bottom: 8px;
+    }
+    .test-cards .card {
+        margin-top: 40px;
+    }
+    .profile {
+        width: 80px !important;
+        margin-top: 16px;
+    }
 }
 
 
@@ -259,6 +272,9 @@ nav {
     align-items: center;
     color: black;
     font-family: Cinzel;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .nav-links li a {
