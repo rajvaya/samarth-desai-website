@@ -1,16 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+/* titlehead */
+
+.titleheadtab {
+    display: none;
+}
+
+.titleheadmob {
+    display: none;
+}
+
+.titledeco {
+    height: 45px;
+    opacity: .5;
+    margin: 0px 30px;
+}
+
+.title {
+    line-height: 0;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 36px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.title span {
+    border-bottom: 14px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
+}
+
 .body {
     background-color: #FFFDFA;
 }
 
+/* Content */
+.card {
+    border: 1px solid #FEC10B !important;
+}
+
+.verticalit,.reverseit{
+    margin-bottom: 32px;
+}
+
+h6 {
+    padding-top: 8px;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
 .aboutcontent {
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.6;
 }
 
 #boldit {
     font-weight: bold;
 }
+
+.row-border {
+    padding: 32px;
+    border: 1px solid #FEC10B;
+    ;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 4px;
+}
+
+/* */
 
 .bestmomentshead {
     display: block;
@@ -65,6 +122,24 @@
     color: white;
 }
 
+@media screen and (max-width: 1024px) {
+    .reverseit {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .verticalit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutcontent {
+        margin-bottom: 16px;
+    }
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     .best-img {
         margin-bottom: 40px;
@@ -79,7 +154,6 @@
         margin-bottom: 8px;
     }
 }
-
 
 /* nav n footer css starts*/
 
@@ -179,5 +253,55 @@ footer {
     }
     li.fade {
         opacity: 100;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .titleheadmob {
+        display: block;
+    }
+    .titleheadtab {
+        display: none !important;
+    }
+    .titledeco {
+        height: 36px;
+        margin: 0px 20px;
+    }
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .title span {
+        border-bottom: 10px solid rgba(254, 193, 11, 0.3);
+    }
+    .aboutcontent {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .hireimg {
+        width: 100%;
+    }
+    .row-border {
+        padding: 16px;
+        border: 1px solid #FEC10B;
+        ;
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titleheadtab {
+        display: block;
+    }
+    .titlehead {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 26px;
     }
 }

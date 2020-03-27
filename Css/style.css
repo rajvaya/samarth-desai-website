@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
-<<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD
 /* titlehead */
 
 .titleheadtab {
@@ -22,6 +21,7 @@
     font-family: cinzel;
     font-size: 36px;
     margin-bottom: 32px;
+    margin-top: 60px;
 }
 
 .title span {
@@ -29,23 +29,27 @@
     display: inline-block
 }
 
-=======>>>>>>>6bcaaa7e5ee7021ed0f9dea8341eab6459faab21=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!
 /* carousel */
 
-.vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right {
+.carousel-caption {
+    z-index: 1;
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+
+.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-.vert .carousel-item-next,
-.vert .active.carousel-item-right {
+.vert .carousel-item-next, .vert .active.carousel-item-right {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100% 0);
 }
 
-.vert .carousel-item-prev,
-.vert .active.carousel-item-left {
+.vert .carousel-item-prev, .vert .active.carousel-item-left {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
 }
@@ -296,7 +300,6 @@ footer {
     padding: 0 4px;
 }
 
-
 /* Create four equal columns that sits next to each other */
 
 .column {
@@ -313,7 +316,6 @@ footer {
     width: 100%;
 }
 
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
@@ -323,7 +325,6 @@ footer {
         max-width: 25%;
     }
 }
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
@@ -365,10 +366,15 @@ footer {
     }
     .title {
         font-size: 28px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+        margin-top: 32px;
     }
     .title span {
         border-bottom: 10px solid rgba(254, 193, 11, 0.3);
+    }
+
+    .news-start {
+        margin-top: 0px;
     }
 }
 
