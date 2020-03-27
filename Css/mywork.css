@@ -32,10 +32,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: black;
+    font-family: Cinzel;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    font-family: Cinzel;
 }
 
 .nav-links li a {
@@ -51,6 +51,21 @@ iframe {
 @media screen and (max-width: 768px) {
     .corner-design {
         display: none;
+    }
+    .quote-img {
+        margin-top: 40px;
+    }
+    .music-albums .card {
+        margin-bottom: 40px;
+    }
+    iframe {
+        margin-bottom: 40px;
+    }
+    .yt-vids button {
+        margin-top: -28%;
+    }
+    footer .col-md-2 {
+        margin-bottom: 8px;
     }
     footer img {
         display: none;
@@ -73,7 +88,7 @@ iframe {
         right: 5%;
         top: 50%;
         transform: translate(-5%, -50%);
-        z-index: 2;
+        z-index: 3;
     }
     .nav-links {
         position: fixed;
@@ -86,6 +101,7 @@ iframe {
         -webkit-clip-path: circle(100px at 90% -30%);
         transition: all 1s ease-out;
         pointer-events: none;
+        z-index: 2;
     }
     .nav-links.open {
         clip-path: circle(1000px at 90% -10%);

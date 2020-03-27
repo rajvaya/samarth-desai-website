@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+<<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD
 /* titlehead */
 
 .titleheadtab {
@@ -32,30 +28,24 @@
     border-bottom: 14px solid rgba(254, 193, 11, 0.3);
     display: inline-block
 }
-=======
->>>>>>> 6bcaaa7e5ee7021ed0f9dea8341eab6459faab21
 
-=======
->>>>>>> parent of 6bcaaa7... all pages responsive !!!!!
-=======
->>>>>>> parent of 6bcaaa7... all pages responsive !!!!!
-=======
->>>>>>> parent of 6bcaaa7... all pages responsive !!!!!
-=======
->>>>>>> parent of 6bcaaa7... all pages responsive !!!!!
+=======>>>>>>>6bcaaa7e5ee7021ed0f9dea8341eab6459faab21=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!=======>>>>>>>parent of 6bcaaa7... all pages responsive !!!!!
 /* carousel */
 
-.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-.vert .carousel-item-next, .vert .active.carousel-item-right {
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100% 0);
 }
 
-.vert .carousel-item-prev, .vert .active.carousel-item-left {
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
 }
@@ -118,6 +108,14 @@ footer {
     font-size: 15px;
 }
 
+.carousel-caption {
+    z-index: 1;
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+
 .corner-design {
     opacity: 0.5;
 }
@@ -169,7 +167,6 @@ footer {
         height: 300px;
         background: black;
     }
-
     .corner-design {
         display: none;
     }
@@ -299,6 +296,7 @@ footer {
     padding: 0 4px;
 }
 
+
 /* Create four equal columns that sits next to each other */
 
 .column {
@@ -315,23 +313,25 @@ footer {
     width: 100%;
 }
 
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
     .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
     }
 }
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
     .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
@@ -353,7 +353,6 @@ footer {
     .carousel-indicators {
         margin-right: -40px;
     }
-   
     .titleheadmob {
         display: block;
     }

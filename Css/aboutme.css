@@ -5,6 +5,7 @@
 
 .aboutcontent {
     font-weight: lighter;
+    font-size: 20px;
 }
 
 #boldit {
@@ -64,6 +65,21 @@
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    .best-img {
+        margin-bottom: 40px;
+    }
+    .card-design {
+        display: none;
+    }
+    footer img {
+        display: none;
+    }
+    footer .col-md-2 {
+        margin-bottom: 8px;
+    }
+}
+
 
 /* nav n footer css starts*/
 
@@ -93,6 +109,9 @@ nav {
     color: black;
     z-index: 3;
     font-family: Cinzel;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 footer {

@@ -70,6 +70,9 @@ nav {
     .left-button {
         margin-top: 0;
     }
+    .academy ul {
+        margin-left: -12% !important;
+    }
     .card {
         margin-bottom: 4%;
     }

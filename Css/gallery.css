@@ -73,9 +73,9 @@
 
 @media screen and (max-width: 800px) {
     .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
     }
 }
 
@@ -84,9 +84,9 @@
 
 @media screen and (max-width: 600px) {
     .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
@@ -150,6 +150,9 @@ nav {
     color: black;
     z-index: 4;
     font-family: Cinzel;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .nav-links li a {
@@ -167,6 +170,15 @@ nav {
     }
     .corner-design {
         display: none;
+    }
+    .card-design {
+        display: none;
+    }
+    footer img {
+        display: none;
+    }
+    footer .col-md-2 {
+        margin-bottom: 8px;
     }
     nav {
         position: relative;
