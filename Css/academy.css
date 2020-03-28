@@ -11,6 +11,24 @@
 
 .academy ul {
     list-style: none;
+    padding: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.levels ul li::before {
+    color: #FEC10B;
+    /* color of bullet or square */
+    content: "\2022";
+    margin-left: -8px;
+}
+
+.levels ul {
+    list-style: none;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: -8% !important;
 }
 
 .left-button {
@@ -19,7 +37,18 @@
 
 .card-title {
     font-family: Cinzel;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block;
 }
+
+.card-subtitle {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
 
 h4 {
     font-family: Cinzel;
@@ -31,6 +60,7 @@ footer img {
 
 .know-more {
     text-decoration: none !important;
+    color: #FEC10B;
 }
 
 .social-icons {
@@ -143,5 +173,148 @@ nav {
     }
     li.fade {
         opacity: 100;
+    }
+}
+
+/* titlehead */
+
+.titleheadtab {
+    display: none;
+}
+
+.titleheadmob {
+    display: none;
+}
+
+.titledeco {
+    height: 45px;
+    opacity: .5;
+    margin: 0px 30px;
+}
+
+.title {
+    line-height: 0;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 36px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.title span {
+    border-bottom: 14px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
+}
+
+@media screen and (max-width: 450px) {
+    .titleheadmob {
+        display: block;
+    }
+    .titleheadtab {
+        display: none !important;
+    }
+    .titledeco {
+        height: 32px;
+        margin: 0px 16px;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .title span {
+        border-bottom: 10px solid rgba(254, 193, 11, 0.3);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titleheadtab {
+        display: block;
+    }
+    .titlehead {
+        display: none;
+    }
+    .removemargin {
+        margin-top: 0px;
+    }
+    #gurutab {
+        font-size: 32px;
+    }
+    #gurutab .titledeco {
+        margin: 0px 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .titledeco {
+        height: 28px;
+        margin: 0px 16px;
+    }
+    .title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+/*  */
+
+.card {
+    border: 1px solid #FEC10B !important;
+}
+
+.hireimg {
+    width: 100%;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.hireme-category {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block;
+}
+
+.btn {
+    background-color: #333333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.aboutcontent {
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#boldit {
+    font-weight: bold;
+}
+
+.row-border {
+    padding: 16px;
+    border: 1px solid #FEC10B;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1024px) {
+    .verticalit {
+        display: flex;
+        flex-direction: column;
+    }
+    .academy ul {
+        padding: 32px;
+        list-style: none;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .hireme-category {
+        margin-bottom: 0;
     }
 }
