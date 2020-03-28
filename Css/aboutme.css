@@ -29,15 +29,45 @@
     display: inline-block
 }
 
+.connectme {
+    line-height: 1.4;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 28px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.connectme-deco {
+    height: 30px;
+    opacity: .5;
+    margin: 0px 15px;
+}
+
+.connectme span {
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
+}
+
+.connectme-link {
+    text-align: center;
+    /* font-family: cinzel; */
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+
+.connectme-social {
+    margin-right: 8px;
+    height: 36px;
+    width: 36px;
+}
+
 .body {
     background-color: #FFFDFA;
 }
 
 /* Content */
-
-/* .card {
-    border: 1px solid #FEC10B !important;
-} */
 
 .verticalit, .reverseit {
     margin-bottom: 32px;
@@ -99,7 +129,7 @@ h6 {
     border-bottom-right-radius: 4px;
 }
 
-.connectme {
+/* .connectme {
     background: black;
 }
 
@@ -127,7 +157,7 @@ h6 {
     font-size: 28px;
     font-weight: bold;
     color: white;
-}
+} */
 
 @media screen and (max-width: 1024px) {
     .reverseit {
@@ -147,15 +177,33 @@ h6 {
     .best-img {
         margin-bottom: 40px;
     }
-    .card-design {
+    /* .card-design {
         display: none;
-    }
+    } */
     footer img {
         display: none;
     }
     footer .col-md-2 {
         margin-bottom: 8px;
     }
+    .connectme {
+        font-size: 22px;
+        margin-bottom: 32px;
+        margin-top: 60px;
+    }
+    .connectme-deco {
+        display: none;
+    }
+
+    .connectme-link {
+        font-size: 20px;
+    }
+
+    .connectme-social {
+        height: 28px;
+        width: 28px;
+    }
+    
 }
 
 /* nav n footer css starts*/
