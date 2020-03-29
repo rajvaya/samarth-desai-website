@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+
 /* titlehead */
 
 .titleheadtab {
@@ -7,6 +8,12 @@
 
 .titleheadmob {
     display: none;
+}
+
+@media screen and (min-width: 767px) {
+    .aboutcontent {
+        margin-top: 5%;
+    }
 }
 
 .titledeco {
@@ -67,9 +74,11 @@
     background-color: #FFFDFA;
 }
 
+
 /* Content */
 
-.verticalit, .reverseit {
+.verticalit,
+.reverseit {
     margin-bottom: 32px;
 }
 
@@ -98,6 +107,7 @@ h6 {
     border-radius: 4px;
 }
 
+
 /* */
 
 .bestmoment {
@@ -113,8 +123,6 @@ h6 {
     border-bottom: 14px solid rgba(254, 193, 11, 0.3);
     display: inline-block
 }
-
-
 
 @media screen and (max-width: 1024px) {
     .reverseit {
@@ -151,17 +159,15 @@ h6 {
     .connectme-deco {
         display: none;
     }
-
     .connectme-link {
         font-size: 20px;
     }
-
     .connectme-social {
         height: 28px;
         width: 28px;
     }
-    
 }
+
 
 /* nav n footer css starts*/
 
@@ -370,7 +376,6 @@ footer {
         flex: 33.33%;
         max-width: 33.33%;
     }
-
     .card-body {
         height: 24px;
         font-size: 12px;
@@ -387,7 +392,6 @@ footer {
         flex: 50%;
         max-width: 50%;
     }
-
     .rowit {
         display: flex;
         flex-direction: row;
@@ -396,7 +400,6 @@ footer {
         max-width: 100%;
         padding: 0px;
     }
-
     .rowit .card {
         padding: 0px 4px;
     }
