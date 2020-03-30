@@ -3,7 +3,6 @@
     background-color: #FFFDFA;
 }
 
-
 /* titlehead */
 
 .titleheadtab {
@@ -34,6 +33,64 @@
     display: inline-block
 }
 
+/*  */
+
+.test-cards .card {
+    background-color: #FFFDFA;
+}
+
+.test-qoute {
+    width: 15%;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    margin-bottom: 16px;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+.test-cards h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    
+
+}
+
+.test-cards h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    color: #333333;
+    
+}
+
+
+
+
+
+.test-mob {
+    display: none;
+}
+.connectme {
+    line-height: 1.4;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 28px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.connectme-deco {
+    height: 30px;
+    opacity: .5;
+    margin: 0px 15px;
+}
 
 /* carousel */
 
@@ -45,20 +102,17 @@
     z-index: 1;
 }
 
-.vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right {
+.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-.vert .carousel-item-next,
-.vert .active.carousel-item-right {
+.vert .carousel-item-next, .vert .active.carousel-item-right {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100% 0);
 }
 
-.vert .carousel-item-prev,
-.vert .active.carousel-item-left {
+.vert .carousel-item-prev, .vert .active.carousel-item-left {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
 }
@@ -100,7 +154,6 @@
     border-radius: 4PX;
 }
 
-
 /*  */
 
 .qoute {
@@ -121,7 +174,6 @@
     font-size: 36px;
     text-transform: capitalize;
 }
-
 
 .hireme-category {
     border-bottom: 4px solid rgba(254, 193, 11, 0.3);
@@ -171,6 +223,50 @@ h6 {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .titleheadtab {
+        display: block;
+    }
+    .titlehead {
+        display: none;
+    }
+    .profile {
+        width: 60px !important;
+        margin-top: 12px;
+    }
+    .test-cards .card {
+        margin-bottom: 24px !important;
+    }
+    footer img {
+        display: none;
+    }
+    footer .col-md-2 {
+        margin-bottom: 8px;
+    }
+    .profile {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }
+    .test-cards h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        margin-left: 8px;
+        line-height: 1;
+    }
+    .test-cards h4 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 4px;
+        margin-left: 8px;
+        line-height: 1;
+        color: #333333;
+    }
+
+
+}
+
 @media screen and (max-width: 450px) {
     .hireme-category {
         font-size: 24px;
@@ -191,8 +287,8 @@ h6 {
         border-radius: 4px;
     }
     .qoute {
-        font-size: 20px;
-        margin: 32px;
+        font-size: 18px;
+        margin: 24px;
     }
     .carousel-indicators {
         margin-right: -40px;
@@ -214,30 +310,39 @@ h6 {
     .title span {
         border-bottom: 10px solid rgba(254, 193, 11, 0.3);
     }
-}
+    .connectme {
+        font-family: cinzel;
+        font-size: 24px;
+        margin-bottom: 24px;
+        margin-top: 60px;
+    }
+    .connectme-deco {
+        height: 24px;
+        opacity: .5;
+        margin: 0px 8px;
+    }
 
-@media screen and (max-width: 768px) {
-    .titleheadtab {
-        display: block;
-    }
-    .titlehead {
-        display: none;
-    }
     .profile {
-        width: 60px !important;
-        margin-top: 12px;
+        border-radius: 50%;
+        height: 64px;
+        width: 64px !important;
     }
-    .test-cards .card {
-        margin-bottom: 40px !important;
+    .test-cards h3 {
+        font-size: 20px;
     }
-    footer img {
+    .test-cards h4 {
+        font-size: 16px;
+        color: #333333;
+    }
+    .test-mob {
+        display:block;
+        margin-left: -8px;
+    }
+    .test-all {
         display: none;
     }
-    footer .col-md-2 {
-        margin-bottom: 8px;
-    }
-}
 
+}
 
 /*nav n footer css*/
 
