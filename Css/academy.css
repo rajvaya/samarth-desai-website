@@ -31,13 +31,43 @@
     margin-left: -8% !important;
 }
 
+.curriculam ul li::before {
+    color: #FEC10B;
+    /* color of bullet or square */
+    content: "\2022";
+    margin-left: -8px;
+}
+
+.curriculam ul {
+    list-style: none;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: -4% !important;
+}
+
+.abt-guru ul li::before {
+    color: #FEC10B;
+    /* color of bullet or square */
+    content: "\2022";
+    margin-left: -8px;
+}
+
+.abt-guru ul {
+    list-style: none;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: -4% !important;
+}
+
 .left-button {
     margin-top: 11%;
 }
 
 .card-title {
     font-family: Cinzel;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: capitalize;
     margin-bottom: 16px;
     border-bottom: 4px solid rgba(254, 193, 11, 0.3);
@@ -49,9 +79,21 @@
     margin-top: 0px;
 }
 
+.beg-design {
+    width: 100%;
+    margin-top: -20%;
+}
 
-h4 {
-    font-family: Cinzel;
+.int-design {
+    width: 100%;
+    margin-top: -10%;
+    margin-left: 4%;
+}
+
+.adv-design {
+    width: 70%;
+    margin-top: -10%;
+    margin-left: 20%;
 }
 
 footer img {
@@ -94,6 +136,26 @@ nav {
     color: black;
     text-decoration: none;
     font-size: 16px;
+}
+
+.connectme {
+    line-height: 1.4;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 28px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.connectme-deco {
+    height: 30px;
+    opacity: .5;
+    margin: 0px 15px;
+}
+
+.connectme span {
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
 }
 
 @media screen and (max-width: 768px) {
@@ -206,26 +268,6 @@ nav {
     display: inline-block
 }
 
-@media screen and (max-width: 450px) {
-    .titleheadmob {
-        display: block;
-    }
-    .titleheadtab {
-        display: none !important;
-    }
-    .titledeco {
-        height: 32px;
-        margin: 0px 16px;
-    }
-    .title {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    .title span {
-        border-bottom: 10px solid rgba(254, 193, 11, 0.3);
-    }
-}
-
 @media screen and (max-width: 768px) {
     .titleheadtab {
         display: block;
@@ -241,17 +283,6 @@ nav {
     }
     #gurutab .titledeco {
         margin: 0px 8px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .titledeco {
-        height: 28px;
-        margin: 0px 16px;
-    }
-    .title {
-        font-size: 22px;
-        margin-bottom: 20px;
     }
 }
 
@@ -274,6 +305,26 @@ nav {
     font-size: 24px;
     text-transform: capitalize;
     margin-bottom: 16px;
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block;
+}
+
+.curr-category {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: capitalize;
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block;
+}
+
+.workshop-category {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: capitalize;
     border-bottom: 4px solid rgba(254, 193, 11, 0.3);
     display: inline-block;
 }
@@ -318,3 +369,71 @@ nav {
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .titleheadmob {
+        display: block;
+    }
+    .titleheadtab {
+        display: none !important;
+    }
+    .titledeco {
+        height: 32px;
+        margin: 0px 16px;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .title span {
+        border-bottom: 10px solid rgba(254, 193, 11, 0.3);
+    }
+    .connectme {
+        font-size: 22px;
+        margin-bottom: 32px;
+        margin-top: 60px;
+    }
+    .connectme-deco {
+        display: none;
+    }
+    .beg-design {
+        width: 60%;
+        margin-top: 8px;
+    }
+    .int-design {
+        width: 70%;
+        margin-top: 8px;
+        margin-left: 4%;
+    }
+    .adv-design {
+        width: 50%;
+        margin-top: 8px;
+        margin-left: 20%;
+    }
+    .workshop-category {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .titledeco {
+        height: 28px;
+        margin: 0px 16px;
+    }
+    .title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+
+button.show.collapsed:before {
+    content: 'More';
+    display: block;
+}
+
+button.show:before {
+    content: 'Less';
+    display: block;
+}
+
