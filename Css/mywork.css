@@ -45,7 +45,10 @@ footer {
 }
 
 iframe {
-    border-radius: 4px !important;
+    border-radius: 8px !important;
+    padding: 8px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0,.15);
 }
 
 /* titlehead */
@@ -136,11 +139,16 @@ iframe {
 
 .btn {
     background-color: #FEC10B;
-    color: #fff;
+    color: #111111;
     text-align: center;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
+    font-weight: 600;
+}
+
+.loved-my-work .btn {
+    margin-bottom: 8px;
 }
 
 button.show.collapsed:before {
@@ -198,6 +206,10 @@ button.show:before {
     width: 36px;
 }
 
+.toyt {
+    margin-top: 32px;
+}
+
 @media screen and (max-width: 768px) {
     .corner-design {
         display: none;
@@ -211,8 +223,8 @@ button.show:before {
     iframe {
         margin-bottom: 40px;
     }
-    .yt-vids button {
-        margin-top: -28%;
+    .toyt {
+        margin-top: -16px;
     }
     footer .col-md-2 {
         margin-bottom: 8px;
