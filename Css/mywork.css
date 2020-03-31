@@ -48,6 +48,156 @@ iframe {
     border-radius: 4px !important;
 }
 
+/* titlehead */
+
+.titleheadtab {
+    display: none;
+}
+
+.titleheadmob {
+    display: none;
+}
+
+.titledeco {
+    height: 45px;
+    opacity: .5;
+    margin: 0px 30px;
+}
+
+.title {
+    line-height: 0;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 36px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.title span {
+    border-bottom: 14px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
+}
+
+.my-work .quote {
+    font-family: Cinzel;
+    font-size: 28px;
+    margin-top: 4%;
+}
+
+.subtitle {
+    line-height: 1.4;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 28px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.subtitle-deco {
+    height: 30px;
+    opacity: .5;
+    margin: 0px 15px;
+}
+
+.subtitle span {
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
+}
+
+.music-albums .container {
+    width: 80%;
+}
+
+.album .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #333333;
+}
+
+.music-links {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.album .card-subheading {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-top: -2px;
+    color: #888888;
+}
+
+.morerow {
+    margin-top: 32px;
+}
+
+.btn {
+    background-color: #FEC10B;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+button.show.collapsed:before {
+    content: 'Show More';
+    display: block;
+}
+
+button.show:before {
+    content: 'Show Less';
+    display: block;
+}
+
+.smallscreen {
+    display: none;
+}
+
+.social-links {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.connectme {
+    line-height: 1.4;
+    text-align: center;
+    font-family: cinzel;
+    font-size: 28px;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.connectme-deco {
+    height: 30px;
+    opacity: .5;
+    margin: 0px 15px;
+}
+
+.connectme span {
+    border-bottom: 4px solid rgba(254, 193, 11, 0.3);
+    display: inline-block
+}
+
+.connectme-link {
+    text-align: center;
+    /* font-family: cinzel; */
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+
+.connectme-social {
+    margin-right: 8px;
+    height: 36px;
+    width: 36px;
+}
+
 @media screen and (max-width: 768px) {
     .corner-design {
         display: none;
@@ -56,7 +206,7 @@ iframe {
         margin-top: 40px;
     }
     .music-albums .card {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
     }
     iframe {
         margin-bottom: 40px;
@@ -125,5 +275,93 @@ iframe {
     }
     li.fade {
         opacity: 100;
+    }
+    .titleheadtab {
+        display: block;
+    }
+    .titlehead {
+        display: none;
+    }
+    .my-work .quote {
+        font-family: Cinzel;
+        font-size: 22px;
+        margin-top: 4%;
+    }
+    .subtitle {
+        font-size: 22px;
+        margin-bottom: 32px;
+        margin-top: 60px;
+    }
+    .album .card-title {
+        font-size: 20px;
+    }
+    .music-links {
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+    }
+    .album .card-subheading {
+        font-size: 16px;
+    }
+    .morerow {
+        margin-top: 0px;
+    }
+    .music-albums .container {
+        width: 100%;
+    }
+    .connectme {
+        font-size: 22px;
+        margin-bottom: 32px;
+        margin-top: 60px;
+    }
+    .connectme-deco {
+        display: none;
+    }
+    .connectme-link {
+        font-size: 20px;
+    }
+    .connectme-social {
+        height: 28px;
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .titleheadmob {
+        display: block;
+    }
+    .titleheadtab {
+        display: none !important;
+    }
+    .titledeco {
+        height: 36px;
+        margin: 0px 20px;
+    }
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .title span {
+        border-bottom: 10px solid rgba(254, 193, 11, 0.3);
+    }
+    .album .card-title {
+        font-size: 22px;
+    }
+    .music-links {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+    .album .card-subheading {
+        font-size: 18px;
+    }
+    .bigscreen {
+        display: none;
+    }
+    .smallscreen {
+        display: block;
+    }
+    .removeinsmall {
+        display: none;
     }
 }
