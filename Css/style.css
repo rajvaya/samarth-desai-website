@@ -6,6 +6,12 @@
     display: none;
 }
 
+footer a,
+.footer a {
+    text-decoration: none !important;
+    color: white;
+}
+
 .titleheadmob {
     display: none;
 }

@@ -3,6 +3,7 @@
     background-color: #FFFDFA;
 }
 
+
 /* titlehead */
 
 .titleheadtab {
@@ -52,6 +53,7 @@
     border-bottom: 4px solid rgba(254, 193, 11, 0.3);
     display: inline-block
 }
+
 .connectme-link {
     text-align: center;
     /* font-family: cinzel; */
@@ -167,6 +169,13 @@
     padding: 0 4px;
 }
 
+footer a,
+.footer a {
+    text-decoration: none !important;
+    color: white;
+}
+
+
 /* Create four equal columns that sits next to each other */
 
 .column {
@@ -177,6 +186,7 @@
     padding: 0 4px;
 }
 
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
@@ -186,6 +196,7 @@
         max-width: 25%;
     }
 }
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
@@ -248,7 +259,6 @@ nav {
     .corner-design {
         display: none;
     }
-
     footer img {
         display: none;
     }
@@ -301,11 +311,9 @@ nav {
     li.fade {
         opacity: 100;
     }
-
     .card-body {
         font-size: 12px;
         padding-bottom: 0px;
         height: 20px;
     }
 }
-

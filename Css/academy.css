@@ -61,6 +61,12 @@
     margin-left: -4% !important;
 }
 
+footer a,
+.footer a {
+    text-decoration: none !important;
+    color: white;
+}
+
 .left-button {
     margin-top: 11%;
 }
@@ -238,6 +244,7 @@ nav {
     }
 }
 
+
 /* titlehead */
 
 .titleheadtab {
@@ -286,12 +293,12 @@ nav {
     }
 }
 
+
 /*  */
 
 .card {
     border: 1px solid #FEC10B !important;
 }
-
 
 .hireme-category {
     font-family: Cinzel;
@@ -421,7 +428,6 @@ nav {
     }
 }
 
-
 button.show.collapsed:before {
     content: 'More';
     display: block;
@@ -431,4 +437,3 @@ button.show:before {
     content: 'Less';
     display: block;
 }
-

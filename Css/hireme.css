@@ -3,6 +3,7 @@
     background-color: #FFFDFA;
 }
 
+
 /* titlehead */
 
 .titleheadtab {
@@ -33,6 +34,7 @@
     display: inline-block
 }
 
+
 /*  */
 
 .test-cards .card {
@@ -58,8 +60,6 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 4px;
-    
-
 }
 
 .test-cards h4 {
@@ -67,16 +67,12 @@
     font-weight: normal;
     margin-bottom: 4px;
     color: #333333;
-    
 }
-
-
-
-
 
 .test-mob {
     display: none;
 }
+
 .connectme {
     line-height: 1.4;
     text-align: center;
@@ -92,6 +88,7 @@
     margin: 0px 15px;
 }
 
+
 /* carousel */
 
 .carousel-caption {
@@ -102,17 +99,20 @@
     z-index: 1;
 }
 
-.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-.vert .carousel-item-next, .vert .active.carousel-item-right {
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100% 0);
 }
 
-.vert .carousel-item-prev, .vert .active.carousel-item-left {
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
 }
@@ -153,6 +153,7 @@
     background-size: cover;
     border-radius: 4PX;
 }
+
 
 /*  */
 
@@ -201,6 +202,12 @@ h6 {
 
 #boldit {
     font-weight: bold;
+}
+
+footer a,
+.footer a {
+    text-decoration: none !important;
+    color: white;
 }
 
 .row-border {
@@ -263,8 +270,6 @@ h6 {
         line-height: 1;
         color: #333333;
     }
-
-
 }
 
 @media screen and (max-width: 450px) {
@@ -321,7 +326,6 @@ h6 {
         opacity: .5;
         margin: 0px 8px;
     }
-
     .profile {
         border-radius: 50%;
         height: 64px;
@@ -335,14 +339,14 @@ h6 {
         color: #333333;
     }
     .test-mob {
-        display:block;
+        display: block;
         margin-left: -8px;
     }
     .test-all {
         display: none;
     }
-
 }
+
 
 /*nav n footer css*/
 

@@ -48,8 +48,15 @@ iframe {
     border-radius: 8px !important;
     padding: 8px;
     border-width: 1px;
-    border-color: rgba(0, 0, 0,.15);
+    border-color: rgba(0, 0, 0, .15);
 }
+
+footer a,
+.footer a {
+    text-decoration: none !important;
+    color: white;
+}
+
 
 /* titlehead */
 
