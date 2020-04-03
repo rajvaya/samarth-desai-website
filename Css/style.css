@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+
 /* titlehead */
 
 .titleheadtab {
@@ -163,13 +164,6 @@ iframe {
 }
 
 
-
-
-
-
-
-
-
 /* carousel */
 
 .carousel-caption {
@@ -180,17 +174,20 @@ iframe {
     z-index: 1;
 }
 
-.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-.vert .carousel-item-next, .vert .active.carousel-item-right {
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100% 0);
 }
 
-.vert .carousel-item-prev, .vert .active.carousel-item-left {
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
 }
@@ -235,8 +232,6 @@ iframe {
 .news-start {
     margin-top: 32px;
 }
-
-
 
 nav {
     height: 10vh;
@@ -379,7 +374,6 @@ footer {
     iframe {
         margin-bottom: 40px;
     }
-
 }
 
 .my-work {
@@ -421,6 +415,7 @@ footer {
     padding: 0 4px;
 }
 
+
 /* Create four equal columns that sits next to each other */
 
 .column {
@@ -437,6 +432,7 @@ footer {
     width: 100%;
 }
 
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
@@ -446,6 +442,7 @@ footer {
         max-width: 25%;
     }
 }
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
@@ -470,6 +467,7 @@ footer {
         margin-top: 3%;
     }
 }
+
 @media screen and (max-width: 768px) {
     .titleheadtab {
         display: block;
@@ -477,7 +475,6 @@ footer {
     .titlehead {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 450px) {
@@ -516,6 +513,4 @@ footer {
     .album .card-subheading {
         font-size: 18px;
     }
-
 }
-
