@@ -130,7 +130,7 @@
                                     </li>
                                 </ul>
                             </h3>
-                            <button type="button" class="btn btn-dark" onclick="this.blur();" style="margin-top: 16px;">Know More</button>
+                            <button type="button" class="btn btn-dark guru-shishya-cta" style="margin-top: 16px;">Know More</button>
                         </div>
 
 
@@ -350,7 +350,7 @@
                                     Introduction to Indian Classical Scales "Ragas".
                                 </li>
                                 <li>
-                                    Learn this uniquely crafted style of blending Hindustani Classical Music on a western styled instrument.  </li>
+                                    Learn this uniquely crafted style of blending Hindustani Classical Music on a western styled instrument. </li>
                             </ul>
                             <button type="button" class="btn btn-dark" onclick="this.blur();">Register Now</button>
 
@@ -397,7 +397,8 @@
                         Students are expected to have their own guitars before requesting for an online appointment.
                     </li>
                     <li>
-                        Classes are being conducted online through SKYPE. Students are expected to download the required software themselves. Hi-speed internet connection, a good head-set with microphone and a silent environment, are some of the other conditions students are expected to take care of.
+                        Classes are being conducted online through SKYPE. Students are expected to download the required software themselves. Hi-speed internet connection, a good head-set with microphone and a silent environment, are some of the other conditions students are
+                        expected to take care of.
                     </li>
                     <li>
                         We are not responsible if ongoing classes are disrupted in between due to unforeseen circumstances. In such cases classes can be rescheduled.
@@ -414,7 +415,7 @@
                 <center>
                     <div class="quote-div" style="font-family: Cinzel;font-size: 22px;">
 
-                        <img src="../Assets/qouteleft.svg" alt="" style="margin-right: 8px; width: 28px;">"Don't worry about success, just focus on work." <br>- Samarth Desai  <img src="../Assets/qouteright.svg" style="margin-left: 8px;  width: 28px;"
+                        <img src="../Assets/qouteleft.svg" alt="" style="margin-right: 8px; width: 28px;">"Don't worry about success, just focus on work." <br>- Samarth Desai <img src="../Assets/qouteright.svg" style="margin-left: 8px;  width: 28px;"
                             alt="">
 
                     </div>
@@ -743,6 +744,16 @@
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("open");
 
+        });
+    </script>
+
+
+    <script>
+        $(".guru-shishya-cta").click(function() {
+            $('html,body').animate({
+                    scrollTop: $(".guru-shishya").offset().top
+                },
+                'slow');
         });
     </script>
 
