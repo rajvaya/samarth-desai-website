@@ -437,3 +437,67 @@ button.show:before {
     content: 'Less';
     display: block;
 }
+/* Contact */
+
+.contactpage {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 32px;
+    padding-bottom: 96px;
+}
+
+.contact-text {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: lighter;
+}
+
+.contactpage button {
+    border-width: 2px;
+    font-size: 22px;
+    padding: 8px 48px;
+    background-color: #333333;
+    border: none;
+}
+
+.contactpage h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-text {
+        font-size: 18px;
+    }
+    .contactpage button {
+        font-size: 16px;
+    }
+    .contactpage h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contactpage {
+        margin-top: 16px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .contact-text {
+        font-size: 16px;
+    }
+    .contactpage button {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .contactpage h3 {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+}

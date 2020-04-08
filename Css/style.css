@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
-
 /* titlehead */
 
 .titleheadtab {
     display: none;
 }
 
-footer a,
-.footer a {
+footer a, .footer a {
     text-decoration: none !important;
     color: white;
 }
@@ -169,7 +167,6 @@ iframe {
     font-size: 16px;
 }
 
-
 /* carousel */
 
 .carousel-caption {
@@ -180,20 +177,17 @@ iframe {
     z-index: 1;
 }
 
-.vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right {
+.vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-.vert .carousel-item-next,
-.vert .active.carousel-item-right {
+.vert .carousel-item-next, .vert .active.carousel-item-right {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100% 0);
 }
 
-.vert .carousel-item-prev,
-.vert .active.carousel-item-left {
+.vert .carousel-item-prev, .vert .active.carousel-item-left {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
 }
@@ -421,7 +415,6 @@ footer {
     padding: 0 4px;
 }
 
-
 /* Create four equal columns that sits next to each other */
 
 .column {
@@ -438,7 +431,6 @@ footer {
     width: 100%;
 }
 
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
@@ -448,7 +440,6 @@ footer {
         max-width: 25%;
     }
 }
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
@@ -518,5 +509,70 @@ footer {
     }
     .album .card-subheading {
         font-size: 18px;
+    }
+}
+
+/* Contact */
+
+.contactpage {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 32px;
+    padding-bottom: 96px;
+}
+
+.contact-text {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: lighter;
+}
+
+.contactpage button {
+    border-width: 2px;
+    font-size: 22px;
+    padding: 8px 48px;
+    background-color: #333333;
+    border: none;
+}
+
+.contactpage h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-text {
+        font-size: 18px;
+    }
+    .contactpage button {
+        font-size: 16px;
+    }
+    .contactpage h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contactpage {
+        margin-top: 16px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .contact-text {
+        font-size: 16px;
+    }
+    .contactpage button {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .contactpage h3 {
+        margin-top: 16px;
+        font-size: 14px;
     }
 }
