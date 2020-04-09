@@ -171,6 +171,23 @@ iframe {
 
 .carousel-caption {
     z-index: 1;
+    bottom: 70%;
+}
+
+.carousel-caption h3 {
+    font-size: 24px;
+}
+
+.carousel-caption button {
+    font-size: 16px;
+    margin-top: 4px;
+
+}
+
+@media screen and (max-width: 375px) {
+    .third {
+        bottom: 64%;
+    }
 }
 
 .carousel-indicators {
@@ -242,9 +259,6 @@ footer {
     font-size: 15px;
 }
 
-.carousel-caption {
-    z-index: 1;
-}
 
 .carousel-indicators {
     z-index: 1;
