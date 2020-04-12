@@ -42,6 +42,17 @@ footer a,
     display: inline-block
 }
 
+a {
+    color: inherit;
+}
+
+a:hover 
+{
+     color: #FEC10B; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
 .connectme {
     line-height: 1.4;
     text-align: center;
@@ -474,3 +485,11 @@ footer {
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .card-body {
+        font-size: 11px;
+        height: 18px;
+    }
+
+}  

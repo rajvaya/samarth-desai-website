@@ -34,6 +34,17 @@
     display: inline-block
 }
 
+a {
+    color: inherit;
+}
+
+a:hover 
+{
+     color: #FEC10B; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
 .connectme {
     line-height: 1.4;
     text-align: center;
