@@ -6,20 +6,19 @@
     display: none;
 }
 
-
 #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     z-index: 99;
-    font-size: 18px;
+    font-size: 12px;
     border: none;
     outline: none;
     background-color: black;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 8px;
     border-radius: 4px;
 }
 
@@ -31,6 +30,18 @@ footer a,
 .footer a {
     text-decoration: none !important;
     color: white;
+}
+
+a:hover {
+    color: #FEC10B;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: #FEC10B;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .titleheadmob {
@@ -53,7 +64,7 @@ footer a,
 }
 
 .title span {
-    border-bottom: 8px solid rgba(254, 193, 11, 0.3);
+    border-bottom: 14px solid rgba(254, 193, 11, 0.3);
     display: inline-block
 }
 
@@ -289,9 +300,7 @@ footer {
     z-index: 1;
 }
 
-.corner-design {
-    opacity: 0.5;
-}
+
 
 .title-head {
     width: 100%;
@@ -333,10 +342,7 @@ footer {
     .footer .col-md-2 {
         margin-top: 2%;
     }
-    .mob-foot {
-        height: 300px;
-        background: black;
-    }
+
     .corner-design {
         display: none;
     }
