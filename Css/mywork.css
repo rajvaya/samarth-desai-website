@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body {
+    background-color: #FFFDFA;
+}
+
 nav {
     height: 10vh;
 }
 
-.corner-design {
-    opacity: 0.5;
-}
+
 
 footer {
     font-family: Cinzel;

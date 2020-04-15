@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body {
+    background-color: #FFFDFA;
+}
+
+
 .academy ul li::before {
     color: #FEC10B;
     /* color of bullet or square */
